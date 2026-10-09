@@ -1,0 +1,321 @@
+:root{
+    --Fundo: #16223B;
+    --Texto: #55648A;
+    --Barras: #3D8BFF;
+
+}
+body{
+      background-color: var(--Fundo);
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+}
+.barra{
+    background-color: var(--Texto);
+    width: 100%;
+    height: 2px;
+}
+.barra2{
+    width: 70%;
+    margin: 80px auto 0;
+    border: none;
+    border-top: 1px solid var(--Texto);
+    
+}      
+header{ 
+    position: sticky;
+    top: 0;
+    background-color: var(--Fundo);
+    z-index: 10;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 30px 150px 20px 0;
+    margin: 0;
+    list-style: none;
+}
+header ul a{
+      color: var(--Texto);
+    text-decoration: none;
+    border-bottom: 1px solid var(--Texto);
+    padding-bottom: 4px;
+}
+h2{
+    display: inline-block;
+    color: var(--Texto);
+    margin: 30px 0 0 60px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--Texto);
+    scroll-margin-top: 100px;
+}
+
+.Sobremim{
+    color: var(--Texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding-top: 40px;
+}
+.Sobremim p{
+      font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    max-width: 400px;
+}
+.quadro{
+    background-color: var(--Texto);
+    border-radius: 40px;
+    padding: 20px;
+}
+.quadro img{
+ display: block;
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 28px;
+}
+.skills{
+     width: 70%;
+    margin: 60px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.skill img{
+   width: 200px;
+    height: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.progresso{
+    flex: 1;
+    height: 12px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.nivel{
+      width: 0;
+    height: 100%;
+    background-color: var(--Barras);
+    border-radius: 10px;
+    transition: width 1.2s ease;
+}
+html{ scroll-behavior: smooth; }
+.projetos{
+    width: 70%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--Texto);
+    width: 185px;
+}
+.projeto p{
+    margin: 0;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.moldura{
+    width: 185px;
+    height: 185px;
+    box-sizing: border-box;
+    border: 7px solid var(--Texto);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.moldura img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.projeto:hover .moldura{
+    transform: translateY(-8px);
+    border-color: var(--Barras);
+}
+.certificados{
+    width: 70%;
+    margin: 60px auto 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.certificado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--Texto);
+    width: 185px;
+}
+
+.certificado p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--Texto);
+}
+
+.certificado span{
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.contato{
+    width: 70%;
+    max-width: 560px;
+    margin: 80px auto;
+    background-color: var(--Texto);
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formulario input,
+.formulario textarea{
+    background-color: #d9d9d9;
+    border: 1px solid #4a90e2;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formulario textarea{
+    height: 170px;
+    resize: none;
+    border-radius: 25px;
+    padding-top: 15px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder{
+    color: #000;
+    opacity: 1;
+}
+.formulario button{
+    background-color: var(--Fundo);
+    color: var(--Texto);
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover{
+    background-color: var(--Barras);
+    color: #fff;
+}
+
+.github{
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    padding: 12px 18px;
+    margin-top: 10px;
+}
+
+.github p{
+    margin: 0 0 6px;
+    font-weight: 600;
+    color: #000;
+}
+
+.github a{
+    color: #000;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+footer{
+    border-top: 1px solid var(--Texto);
+    margin-top: 80px;
+    padding: 40px 0;
+    text-align: center;
+    color: var(--Texto);
+    font-weight: 600;
+}
+
+footer p{
+    margin: 0;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    h2 {
+        margin-left: 20px;
+    }
+
+    .skill {
+        gap: 20px;
+    }
+
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Logo img {
+        max-height: 40px;
+    }
+
+    .contato {
+        padding: 20px;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
